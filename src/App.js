@@ -1,35 +1,48 @@
 import React, { Component } from "react";
 import "./App.css";
 
+const Dummy = () => <div>butt</div>;
+const Dork = () => <div>bussstt</div>;
+
+// prettier-ignore
+const pages = new Map([
+  ["dog", Dummy],
+  ["bufus", Dork]
+]);
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      currentPage: null
+    };
+
+    this.Index = [...pages.keys()].map((name, i) => (
+      <div className="index-item" key={i}>
+        <a
+          onClick={() =>
+            this.setState(() => ({
+              currentPage: name
+            }))
+          }
+        >
+          {name}
+        </a>
+      </div>
+    ));
+  }
+
   render() {
     return (
       <div className="wrapper">
         <header className="header">six ash portfolio</header>
         <aside className="sidebar">
           <span>index of works:</span>
-          <div>
-            <a>one</a>
-          </div>
-          <div>
-            <a>two</a>
-          </div>
-          <div>
-            <a>one</a>
-          </div>
-          <div>
-            <a>one</a>
-          </div>
-          <div>
-            <a>one</a>
-          </div>
+          {this.Index}
         </aside>
         <article className="content">
-          <h1>2 column, header and footer</h1>
-          <p>
-            This example uses line-based positioning, to position the header and
-            ooter, stretching them across the grid.
-          </p>
+          {(pages.get(this.state.currentPage) || (() => {}))()}
         </article>
         <footer className="footer">My footer</footer>
       </div>
