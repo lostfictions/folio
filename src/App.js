@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
 
+import Bots from "./pages/Bots";
+
 const Dummy = () => <div>butt</div>;
 const Dork = () => <div>bussstt</div>;
 
 // prettier-ignore
 const pages = new Map([
+  ["Bots", Bots],
   ["dog", Dummy],
   ["bufus", Dork]
 ]);
@@ -34,6 +37,13 @@ class App extends Component {
   }
 
   render() {
+    const { currentPage } = this.state;
+    let page = null;
+    if (currentPage) {
+      const Comp = pages.get(currentPage);
+      if (Comp) page = <Comp />;
+    }
+
     return (
       <div className="wrapper">
         <header className="header">six ash portfolio</header>
@@ -41,9 +51,7 @@ class App extends Component {
           <span>index of works:</span>
           {this.Index}
         </aside>
-        <article className="content">
-          {(pages.get(this.state.currentPage) || (() => {}))()}
-        </article>
+        <article className="content">{page}</article>
         <footer className="footer">My footer</footer>
       </div>
     );
