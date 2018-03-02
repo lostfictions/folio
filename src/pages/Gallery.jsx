@@ -22,14 +22,24 @@ class Gallery extends Component {
     const lightboxActive = lightboxImage !== null;
 
     // eslint-disable-next-line react/prop-types
-    const { images } = this.props;
+    let { images } = this.props;
+
+    if (!Array.isArray(images)) {
+      console.warn("no images provided for gallery!");
+      return null;
+    }
+    if (images.length > 0) {
+      if (typeof images[0] === "string") {
+        images = images.map(src => ({
+          src
+        }));
+      }
+    }
 
     return (
       <div className="gallery-container">
         <Lightbox
-          images={images.map(i => ({
-            src: i
-          }))}
+          images={images}
           backdropClosesModal
           showThumbnails={true}
           isOpen={lightboxActive}
@@ -42,10 +52,10 @@ class Gallery extends Component {
         {images.map((img, i) => (
           <a
             key={i}
-            className="gallery-image"
+            className={`gallery-image ${img.big ? "gallery-image-big" : ""}`}
             onClick={() => this.setLightboxImage(i)}
           >
-            <img className="gallery-image-inner" src={img} alt="" />
+            <img className="gallery-image-inner" src={img.src} alt="" />
           </a>
         ))}
       </div>

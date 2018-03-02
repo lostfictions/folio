@@ -7,7 +7,12 @@ import inmag from "./inmag.jpg";
 import muskox from "./muskox.jpg";
 import page from "./page.jpg";
 
-const images = [splash, inmag, muskox, page];
+const images = [
+  { src: splash, big: true },
+  { src: inmag },
+  { src: muskox },
+  { src: page }
+];
 
 class Seers extends Component {
   render() {
