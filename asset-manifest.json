@@ -1,9 +1,23 @@
 {
-  "main.css": "static/css/main.e9f96a25.css",
-  "main.css.map": "static/css/main.e9f96a25.css.map",
-  "main.js": "static/js/main.dbdb1586.js",
-  "main.js.map": "static/js/main.dbdb1586.js.map",
+  "main.css": "static/css/main.13b4015c.css",
+  "main.css.map": "static/css/main.13b4015c.css.map",
+  "main.js": "static/js/main.15127074.js",
+  "main.js.map": "static/js/main.15127074.js.map",
+  "static/media/admiralsclub.png": "static/media/admiralsclub.15eb78f8.png",
+  "static/media/chargen.jpg": "static/media/chargen.3fd2adac.jpg",
+  "static/media/cover.png": "static/media/cover.d17a0004.png",
+  "static/media/extra.png": "static/media/extra.31f8a7a0.png",
+  "static/media/fa2013cabs-crop.jpg": "static/media/fa2013cabs-crop.4e68d9b2.jpg",
+  "static/media/faf-poster-2017.png": "static/media/faf-poster-2017.1ee63ee5.png",
   "static/media/gangbot-0.jpg": "static/media/gangbot-0.5307fc3c.jpg",
   "static/media/gangbot-1.jpg": "static/media/gangbot-1.c260558c.jpg",
-  "static/media/gangbot-2.jpg": "static/media/gangbot-2.90b37c78.jpg"
+  "static/media/gangbot-2.jpg": "static/media/gangbot-2.90b37c78.jpg",
+  "static/media/inmag.jpg": "static/media/inmag.ad8b0d6e.jpg",
+  "static/media/logo1.jpg": "static/media/logo1.b5577446.jpg",
+  "static/media/muskox.jpg": "static/media/muskox.c3879650.jpg",
+  "static/media/page.jpg": "static/media/page.9a2d980f.jpg",
+  "static/media/poa-poster-2012.png": "static/media/poa-poster-2012.7ea35fb4.png",
+  "static/media/satosphere.jpg": "static/media/satosphere.76ad186b.jpg",
+  "static/media/spaceteam.png": "static/media/spaceteam.c018a136.png",
+  "static/media/splash.jpg": "static/media/splash.6817ea57.jpg"
 }
