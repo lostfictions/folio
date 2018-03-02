@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Lightbox from "react-images";
 
+import "./Gallery.css";
+
 class Gallery extends Component {
   constructor(props) {
     super(props);
@@ -37,7 +39,7 @@ class Gallery extends Component {
         />
         {images.map((img, i) => (
           <a key={i} onClick={() => this.setLightboxImage(i)}>
-            <img src={img} />
+            <img className="gallery-image" src={img} alt="" />
           </a>
         ))}
       </div>

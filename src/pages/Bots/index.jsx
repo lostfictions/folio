@@ -27,6 +27,7 @@ class Bots extends Component {
   render() {
     return (
       <div>
+        <h2>Bots and Generative work</h2>
         <Gallery images={images} />
       </div>
     );
