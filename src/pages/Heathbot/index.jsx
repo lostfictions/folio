@@ -27,7 +27,7 @@ class Bots extends Component {
         <h3 className="title-desc title-desc-last">Node.js, Twitter</h3>
         <Gallery images={images} />
         <p>
-          Last year some friends introduced me to an inane, inoffensive,
+          A few years ago some friends introduced me to an inane, inoffensive,
           strangely charming single-panel syndicated newpaper comic named
           Heathcliff. I was struck by its formal consistency – almost every gag
           is based on a single speaker in the frame commenting on the action

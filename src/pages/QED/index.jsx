@@ -47,8 +47,9 @@ class QED extends Component {
           </em>.
         </p>
         <p>
-          Showcased at Fantastic Arcade in Austin, TX, Babycastles in Manhattan,
-          Videofag and Gamercamp in Toronto, and at several events in Montréal.
+          Showcased at Babycastles Gallery in Manhattan, Fantastic Arcade in
+          Austin, TX, Videofag in Toronto, and at several events and venues in
+          Montréal.
         </p>
         <p>Development ceased in early 2016.</p>
       </div>
