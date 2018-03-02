@@ -5,17 +5,26 @@ import Gallery from "../Gallery";
 import admiralsclub from "./admiralsclub.png";
 import spaceteam from "./spaceteam.png";
 
-const images = [spaceteam, admiralsclub];
+const images = [
+  { src: spaceteam, big: true },
+  { src: admiralsclub, big: true }
+];
 
-class WebDesign extends Component {
+class Spaceteam extends Component {
   render() {
     return (
       <div>
-        <h2>Bots and Generative work</h2>
+        <h2>
+          <span className="em b">Spaceteam</span>
+          <span className="b"> websites,</span> 2016
+        </h2>
+        <h3 className="title-desc title-desc-last">
+          Twine, HTML5 Canvas, JavaScript
+        </h3>
         <Gallery images={images} />
       </div>
     );
   }
 }
 
-export default WebDesign;
+export default Spaceteam;

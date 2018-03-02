@@ -1,18 +1,23 @@
 import React, { Component } from "react";
 
-import Gallery from "../Gallery";
-
-import faf from "./faf-poster-2017.png";
 import poa from "./poa-poster-2012.png";
-
-const images = [faf, poa];
 
 class Posters extends Component {
   render() {
     return (
       <div>
-        <h2>Posters</h2>
-        <Gallery images={images} />
+        <h2>
+          <span className="title-both">Prince of Arcade</span>
+          <span className="title-bold"> poster,</span> 2012
+        </h2>
+        <h3 className="title-desc">Digital print</h3>
+        <h3 className="title-desc title-desc-last">11&quot; x 17&quot;</h3>
+        <img className="image-fit" src={poa} />
+        <div>
+          An alternate poster design for the Prince of Arcade games event in
+          November 2012, which I also curated. G.P. Lackey provided some models
+          in the render.
+        </div>
       </div>
     );
   }

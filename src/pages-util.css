@@ -1,3 +1,11 @@
+.em {
+  font-style: italic;
+}
+
+.b {
+  font-weight: bold;
+}
+
 .image-fit {
   width: 100%;
 }

@@ -15,9 +15,7 @@ class Realm extends Component {
           width={720}
           height={405}
           frameBorder={0}
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowFullscreen
+          allowFullScreen
         />
         <div>Some modeling work by G.P. Lackey. Music by Anoraak.</div>
       </div>

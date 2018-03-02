@@ -24,10 +24,6 @@ class Gallery extends Component {
     // eslint-disable-next-line react/prop-types
     let { images } = this.props;
 
-    if (!Array.isArray(images)) {
-      console.warn("no images provided for gallery!");
-      return null;
-    }
     if (images.length > 0) {
       if (typeof images[0] === "string") {
         images = images.map(src => ({
@@ -55,7 +51,15 @@ class Gallery extends Component {
             className={`gallery-image ${img.big ? "gallery-image-big" : ""}`}
             onClick={() => this.setLightboxImage(i)}
           >
-            <img className="gallery-image-inner" src={img.src} alt="" />
+            <img
+              className={`gallery-image-inner ${
+                img.pos && img.pos === "bottom"
+                  ? "gallery-image-inner-bottom"
+                  : ""
+              }`}
+              src={img.src}
+              alt=""
+            />
           </a>
         ))}
       </div>

@@ -7,7 +7,7 @@ import "./pages-util.css";
 import Seers from "./pages/Seers";
 import FranzEliza from "./pages/FranzEliza";
 import Catbot from "./pages/Catbot";
-//import Aya
+import Aya from "./pages/Aya";
 import FafPoster from "./pages/FafPoster";
 //import ArcadeRoyale
 //import EditorStudies
@@ -26,11 +26,11 @@ const routeData = [
   ["/seers", "The Seers Catalogue", Seers],
   ["/franz-eliza", "Franz & Eliza", FranzEliza],
   ["/catbot", "Catbot", Catbot],
-  ["/aya", "Aya", Placeholder],
+  ["/aya", "Aya", Aya],
   ["/faf-poster", "Food Against Fascism", FafPoster],
   ["/arcade-royale", "Arcade Royale", Placeholder],
   ["/editor-studies", "Visual editor studies", Placeholder],
-  ["/pl90", "PL@90 retrospective archive", PL90],
+  ["/pl90", "PL@90 retrospective", PL90],
   ["/qed", "QED", QED],
   ["/poa-poster", "Prince of Arcade poster", POAPoster],
   ["/spaceteam", "Spaceteam websites", Spaceteam],

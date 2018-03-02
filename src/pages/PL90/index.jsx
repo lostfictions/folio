@@ -9,15 +9,14 @@ class PL90 extends Component {
         <h2>PL@90</h2>
         <img className="image-fit" src={satosphere} />
         <br />
-        <div>(use password "folio" below.)</div>
+        <br />
+        <h4>(use password &quot;folio&quot; below.)</h4>
         <iframe
           src="https://player.vimeo.com/video/258210062?title=0&byline=0&portrait=0"
           width={720}
           height={405}
           frameBorder={0}
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowFullscreen
+          allowFullScreen
         />
       </div>
     );
