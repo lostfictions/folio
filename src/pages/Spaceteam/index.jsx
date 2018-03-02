@@ -18,9 +18,7 @@ class Spaceteam extends Component {
           <span className="em b">Spaceteam</span>
           <span className="b"> websites,</span> 2016
         </h2>
-        <h3 className="title-desc title-desc-last">
-          Twine, HTML5 Canvas, JavaScript
-        </h3>
+        <h3 className="title-desc title-desc-last">HTML, CSS, JavaScript</h3>
         <Gallery images={images} />
         <p>
           A pair of responsite websites designed for local game developer Henry

@@ -55,8 +55,10 @@ class App extends Component {
     return (
       <Router>
         <div className="wrapper">
-          <header className="header">six ash: portfolio</header>
-          <aside className="sidebar">{links}</aside>
+          <aside className="sidebar">
+            <div className="index-item-header">six ash: portfolio</div>
+            {links}
+          </aside>
           <article className="content">
             <Route exact path="/" render={() => null} />
             {routes}
