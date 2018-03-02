@@ -26,6 +26,18 @@ class Seers extends Component {
           JavaScript
         </h3>
         <Gallery images={images} />
+        <p>
+          A community arcade cabinet, intended to showcase the work of local
+          independent game developers in venues where they might not otherwise
+          have much visibility.
+        </p>
+        <p>
+          A collaborative effort between several folks.{" "}
+          <a href="https://evanlackey.blogspot.ca/">Evan Lackey</a> built the
+          cabinet; I developed the launcher and support software, designed the
+          marquee and the control panel layout, and co-curated the initial
+          selection of games.
+        </p>
       </div>
     );
   }

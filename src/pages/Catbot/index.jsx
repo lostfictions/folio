@@ -33,8 +33,8 @@ class Bots extends Component {
           </Link>{" "}
           – it originally built the cats out of a grid of custom emoji (with
           “palettes” customizable by any user in the chatroom.) A port to
-          Twitter and Mastodon port was done the following month and instead
-          creates images out of sprites.
+          Twitter and Mastodon was done the following month (and instead creates
+          images out of sprites).
         </p>
         <div>
           <a

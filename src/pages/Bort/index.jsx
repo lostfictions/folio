@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Gallery from "../Gallery";
+// import Gallery from "../Gallery";
 
 // import gang0 from "./gangbot-0.jpg";
 // import gang1 from "./gangbot-1.jpg";

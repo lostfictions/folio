@@ -4,14 +4,16 @@ import Gallery from "../Gallery";
 
 import sshot from "./sshot.jpg";
 import chargen from "./chargen.jpg";
+import char from "./char.gif";
 import facabs from "./fa2013cabs-crop.jpg";
 import logo from "./logo1.jpg";
 
 const images = [
   { src: sshot, big: true },
+  { src: facabs, big: true },
+  { src: char, big: true },
   { src: chargen },
-  { src: logo },
-  { src: facabs }
+  { src: logo }
 ];
 
 class QED extends Component {
@@ -51,7 +53,10 @@ class QED extends Component {
           Austin, TX, Videofag in Toronto, and at several events and venues in
           Montréal.
         </p>
-        <p>Development ceased in early 2016.</p>
+        <p>
+          Later a standalone character creator was spun off from the main game.
+          All development ceased in 2016.
+        </p>
       </div>
     );
   }
