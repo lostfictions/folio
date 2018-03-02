@@ -3,18 +3,13 @@ import { Link } from "react-router-dom";
 
 import Gallery from "../Gallery";
 
-import long from "./long.png";
-import spaghet from "./spaghet.png";
-import tang from "./tang.png";
-import twitcat from "./twitcat.png";
-import twitcat2 from "./twitcat2.png";
+import port0 from "./port0.png";
+import port2 from "./port2.png";
 
+// prettier-ignore
 const images = [
-  { src: tang, big: true },
-  { src: twitcat },
-  { src: spaghet },
-  { src: twitcat2 },
-  { src: long }
+  { src: port0, big: true },
+  { src: port2, big:true }
 ];
 
 class Bots extends Component {
@@ -27,33 +22,19 @@ class Bots extends Component {
         <h3 className="title-desc title-desc-last">HTML, JavaScript, Unity</h3>
         <Gallery images={images} />
         <p>
-          Created in November 2017 as a module for my chatbot{" "}
-          <Link className="em b" to="/bort">
-            Bort
-          </Link>{" "}
-          – it originally built the cats out of a grid of custom emoji (with
-          “palettes” customizable by any user in the chatroom.) A port to
-          Twitter and Mastodon port was done the following month and instead
-          creates images out of sprites.
+          Various editor studies and experiments developed in 2015 and 2016
+          either experimentally or as part of contract or other professional
+          work.
         </p>
-        <div>
-          <a
-            href="https://twitter.com/cool_cats"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View the bot online.
-          </a>
-        </div>
-        <div>
-          <a
-            href="https://github.com/lostfictions/catbot"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View the source code.
-          </a>
-        </div>
+        <p>
+          The source code for the Portrait editor (developed as an assistive
+          tool while under contract with the SAT) is{" "}
+          <a href="https://github.com/lostfictions/dialogue-editor">
+            available
+          </a>{" "}
+          but idiosyncratic to the specific needs expressed during its
+          development.
+        </p>
       </div>
     );
   }

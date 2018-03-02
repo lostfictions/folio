@@ -7,8 +7,8 @@ class Posters extends Component {
     return (
       <div>
         <h2>
-          <span className="title-both">Prince of Arcade</span>
-          <span className="title-bold"> poster,</span> 2012
+          <span className="em b">Prince of Arcade</span>
+          <span className="b"> poster,</span> 2012
         </h2>
         <h3 className="title-desc">Digital print</h3>
         <h3 className="title-desc title-desc-last">11&quot; x 17&quot;</h3>

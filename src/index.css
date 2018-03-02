@@ -84,6 +84,11 @@ textarea {
   /* Style adjustments for high resolution devices */
 }
 
+/* prettier-ignore */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
 /* quick reset */
 /* prettier-ignore */
 html, body, div, span, applet, object, iframe,

@@ -5,7 +5,7 @@ class Realm extends Component {
     return (
       <div>
         <h2>
-          <span className="title-both">untitled (realm),</span> 2011
+          <span className="em b">untitled (realm),</span> 2011
         </h2>
         <h3 className="title-desc title-desc-last">
           Unity, digital video capture

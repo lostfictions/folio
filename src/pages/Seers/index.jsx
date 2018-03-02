@@ -25,12 +25,17 @@ class Seers extends Component {
           Twine, HTML5 Canvas, JavaScript
         </h3>
         <Gallery images={images} />
+        <p>
+          Atmospheric interactive fiction piece. A collaboration with Sean
+          Michaels, Patrick McEown, and James Braithwaite, commissioned by the
+          Banff Centre for the Arts and based on a text by Sean.
+        </p>
         <a
           href="http://seerscatalogue.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          View the work online.
+          Play the work online.
         </a>
       </div>
     );
