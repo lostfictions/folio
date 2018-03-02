@@ -4,27 +4,40 @@ import { HashRouter as Router, Route, NavLink as Link } from "react-router-dom";
 import "./App.css";
 import "./pages-util.css";
 
-import Bots from "./pages/Bots";
-import FranzEliza from "./pages/FranzEliza";
-import KnyttUnderground from "./pages/KnyttUnderground";
-import PL90 from "./pages/PL90";
-import Posters from "./pages/Posters";
-import QED from "./pages/QED";
-import Realm from "./pages/Realm";
 import Seers from "./pages/Seers";
-import WebDesign from "./pages/WebDesign";
+import FranzEliza from "./pages/FranzEliza";
+import Catbot from "./pages/Catbot";
+//import Aya
+import FafPoster from "./pages/FafPoster";
+//import ArcadeRoyale
+//import EditorStudies
+import PL90 from "./pages/PL90";
+import QED from "./pages/QED";
+import POAPoster from "./pages/POAPoster";
+import Spaceteam from "./pages/Spaceteam";
+import Realm from "./pages/Realm";
+import Bort from "./pages/Bort";
+import Heathbot from "./pages/Heathbot";
+import Gangbot from "./pages/Gangbot";
 
-// prettier-ignore
+const Placeholder = () => <div>pending</div>;
+
 const routeData = [
-  ["/bots", "Bots", Bots],
-  ["/franz-eliza", "Franz & Eliza", FranzEliza],
-  ["/knytt-mus", "Knytt Underground (music)", KnyttUnderground],
-  ["/pl90", "PL@90", PL90],
-  ["/posters", "Posters", Posters],
-  ["/qed", "QED", QED],
-  ["/untitled-realm", "untitled (realm)", Realm],
   ["/seers", "The Seers Catalogue", Seers],
-  ["/webdesign", "Spaceteam Websites", WebDesign]
+  ["/franz-eliza", "Franz & Eliza", FranzEliza],
+  ["/catbot", "Catbot", Catbot],
+  ["/aya", "Aya", Placeholder],
+  ["/faf-poster", "Food Against Fascism", FafPoster],
+  ["/arcade-royale", "Arcade Royale", Placeholder],
+  ["/editor-studies", "Visual editor studies", Placeholder],
+  ["/pl90", "PL@90 retrospective archive", PL90],
+  ["/qed", "QED", QED],
+  ["/poa-poster", "Prince of Arcade poster", POAPoster],
+  ["/spaceteam", "Spaceteam websites", Spaceteam],
+  ["/untitled-realm", "untitled (realm)", Realm],
+  ["/bort", "Bort", Bort],
+  ["/heathbot", "Heathbot", Heathbot],
+  ["/gangbot", "Gangbot", Gangbot]
 ];
 
 const links = routeData.map(([route, name], i) => (
@@ -46,7 +59,7 @@ class App extends Component {
         <div className="wrapper">
           <header className="header">six ash portfolio</header>
           <aside className="sidebar">
-            <span>index of works:</span>
+            {/* <span>index of works:</span> */}
             {links}
           </aside>
           <article className="content">
