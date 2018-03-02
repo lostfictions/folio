@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.5d3da39f.css",
   "main.css.map": "static/css/main.5d3da39f.css.map",
-  "main.js": "static/js/main.86d05020.js",
-  "main.js.map": "static/js/main.86d05020.js.map",
+  "main.js": "static/js/main.3f72d466.js",
+  "main.js.map": "static/js/main.3f72d466.js.map",
   "static/media/Kigte64.gif": "static/media/Kigte64.6c8d167e.gif",
   "static/media/a1.jpg": "static/media/a1.a14d5228.jpg",
   "static/media/a2.jpg": "static/media/a2.a317f51c.jpg",
@@ -22,6 +22,7 @@
   "static/media/gangbot-1.jpg": "static/media/gangbot-1.c260558c.jpg",
   "static/media/gangbot-2.jpg": "static/media/gangbot-2.90b37c78.jpg",
   "static/media/garb.jpg": "static/media/garb.9cc45791.jpg",
+  "static/media/hero.jpg": "static/media/hero.8479829a.jpg",
   "static/media/inmag.jpg": "static/media/inmag.ad8b0d6e.jpg",
   "static/media/logo1.jpg": "static/media/logo1.b5577446.jpg",
   "static/media/long.png": "static/media/long.c26aa35d.png",
@@ -40,5 +41,6 @@
   "static/media/splash.jpg": "static/media/splash.6817ea57.jpg",
   "static/media/sshot.jpg": "static/media/sshot.1348cc6d.jpg",
   "static/media/tang.png": "static/media/tang.48fc3e38.png",
-  "static/media/trout.jpg": "static/media/trout.91c12c11.jpg"
+  "static/media/trout.jpg": "static/media/trout.91c12c11.jpg",
+  "static/media/trust.jpg": "static/media/trust.ce68117c.jpg"
 }
