@@ -11,7 +11,13 @@
   grid-column: 1 / -1;
 }
 
-.index-item {
-  text-decoration: underline;
-  cursor: pointer;
+.index-item-link--active {
+  color: #222299;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.index-item-link--active::after {
+  content: ">";
+  margin-left: 5px;
 }
