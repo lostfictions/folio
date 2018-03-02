@@ -8,12 +8,16 @@ import garb from "./garb.jpg";
 import bow from "./bow.jpg";
 import pider from "./pider.jpg";
 import trout from "./trout.jpg";
+import hero from "./hero.jpg";
+import trust from "./trust.jpg";
 
 const images = [
   { src: car, big: true, pos: "bottom" },
-  { src: pider, big: true, pos: "bottom" },
+  { src: hero, big: true, pos: "bottom" },
   { src: trout, big: true, pos: "bottom" },
   { src: garb, pos: "bottom" },
+  { src: pider, pos: "bottom" },
+  { src: trust, pos: "bottom" },
   { src: bow, pos: "bottom" }
 ];
 
