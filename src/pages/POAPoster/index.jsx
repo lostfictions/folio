@@ -15,8 +15,7 @@ class Posters extends Component {
         <img className="image-fit" src={poa} />
         <div>
           An alternate poster design for the Prince of Arcade games event in
-          November 2012, which I also curated. G.P. Lackey provided some models
-          in the render.
+          November 2012. G.P. Lackey provided some models in the render.
         </div>
       </div>
     );

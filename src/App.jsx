@@ -9,7 +9,7 @@ import FranzEliza from "./pages/FranzEliza";
 import Catbot from "./pages/Catbot";
 import Aya from "./pages/Aya";
 import FafPoster from "./pages/FafPoster";
-//import ArcadeRoyale
+import ArcadeRoyale from "./pages/ArcadeRoyale";
 //import EditorStudies
 import PL90 from "./pages/PL90";
 import QED from "./pages/QED";
@@ -28,7 +28,7 @@ const routeData = [
   ["/catbot", "Catbot", Catbot],
   ["/aya", "Aya", Aya],
   ["/faf-poster", "Food Against Fascism", FafPoster],
-  ["/arcade-royale", "Arcade Royale", Placeholder],
+  ["/arcade-royale", "Arcade Royale", ArcadeRoyale],
   ["/editor-studies", "Visual editor studies", Placeholder],
   ["/pl90", "PL@90 retrospective", PL90],
   ["/qed", "QED", QED],

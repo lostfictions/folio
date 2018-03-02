@@ -9,7 +9,7 @@ import gang2 from "./gangbot-2.jpg";
 //prettier-ignore
 const images = [
   { src: gang0, big: true },
-  { src: gang1 },
+  { src: gang1, big: true },
   { src: gang2 }
 ];
 
@@ -22,13 +22,28 @@ class Bots extends Component {
         </h2>
         <h3 className="title-desc title-desc-last">HTML5, JavaScript</h3>
         <Gallery images={images} />
-        <a
-          href="https://lostfictions.github.io/gangnams/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View the generator online.
-        </a>
+        <p>
+          A experiment at generating tough (or soft!) gang names in the style of{" "}
+          <span className="em">The Warriors</span>, etc.
+        </p>
+        <div>
+          <a
+            href="https://lostfictions.github.io/gangnams/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the generator online.
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://github.com/lostfictions/gangnams/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the source code.
+          </a>
+        </div>
       </div>
     );
   }
