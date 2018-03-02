@@ -21,14 +21,16 @@ class Gallery extends Component {
     const { lightboxImage } = this.state;
     const lightboxActive = lightboxImage !== null;
 
+    // eslint-disable-next-line react/prop-types
     const { images } = this.props;
 
     return (
-      <div>
+      <div className="gallery-container">
         <Lightbox
-          images={images.map(i => ({ src: i }))}
+          images={images.map(i => ({
+            src: i
+          }))}
           backdropClosesModal
-          showCloseButton={false}
           showThumbnails={true}
           isOpen={lightboxActive}
           currentImage={lightboxImage || 0}
@@ -38,8 +40,12 @@ class Gallery extends Component {
           onClose={() => this.setLightboxImage(null)}
         />
         {images.map((img, i) => (
-          <a key={i} onClick={() => this.setLightboxImage(i)}>
-            <img className="gallery-image" src={img} alt="" />
+          <a
+            key={i}
+            className="gallery-image"
+            onClick={() => this.setLightboxImage(i)}
+          >
+            <img className="gallery-image-inner" src={img} alt="" />
           </a>
         ))}
       </div>

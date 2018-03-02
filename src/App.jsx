@@ -2,17 +2,29 @@ import React, { Component } from "react";
 import { HashRouter as Router, Route, NavLink as Link } from "react-router-dom";
 
 import "./App.css";
+import "./pages-util.css";
 
 import Bots from "./pages/Bots";
-
-const Dummy = () => <div>butt</div>;
-const Dork = () => <div>bussstt</div>;
+import FranzEliza from "./pages/FranzEliza";
+import KnyttUnderground from "./pages/KnyttUnderground";
+import PL90 from "./pages/PL90";
+import Posters from "./pages/Posters";
+import QED from "./pages/QED";
+import Realm from "./pages/Realm";
+import Seers from "./pages/Seers";
+import WebDesign from "./pages/WebDesign";
 
 // prettier-ignore
 const routeData = [
   ["/bots", "Bots", Bots],
-  ["/butt", "Butt", Dummy],
-  ["/beef", "Basf", Dork]
+  ["/franz-eliza", "Franz & Eliza", FranzEliza],
+  ["/knytt-mus", "Knytt Underground (music)", KnyttUnderground],
+  ["/pl90", "PL@90", PL90],
+  ["/posters", "Posters", Posters],
+  ["/qed", "QED", QED],
+  ["/untitled-realm", "untitled (realm)", Realm],
+  ["/seers", "The Seers Catalogue", Seers],
+  ["/webdesign", "Spaceteam Websites", WebDesign]
 ];
 
 const links = routeData.map(([route, name], i) => (
@@ -41,7 +53,7 @@ class App extends Component {
             <Route exact path="/" render={() => null} />
             {routes}
           </article>
-          <footer className="footer">cool footer</footer>
+          {/* <footer className="footer">cool footer</footer> */}
         </div>
       </Router>
     );
