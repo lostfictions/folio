@@ -22,6 +22,33 @@ class Spaceteam extends Component {
           Twine, HTML5 Canvas, JavaScript
         </h3>
         <Gallery images={images} />
+        <p>
+          A pair of responsite websites designed for local game developer Henry
+          Smith, who was embarking on a new campaign to try to explore
+          sustainable ways of creating free work.
+        </p>
+        <div>
+          <a
+            href="http://spaceteam.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the Spaceteam website.
+          </a>
+        </div>
+        <div>
+          <a
+            href="http://spaceteamadmirals.club/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the Spaceteam Admirals Club website.
+          </a>
+        </div>
+        <div>
+          (Note that the sites currently live may have changed since my original
+          design work.)
+        </div>
       </div>
     );
   }

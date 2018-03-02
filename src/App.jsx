@@ -10,7 +10,7 @@ import Catbot from "./pages/Catbot";
 import Aya from "./pages/Aya";
 import FafPoster from "./pages/FafPoster";
 import ArcadeRoyale from "./pages/ArcadeRoyale";
-//import EditorStudies
+import EditorStudies from "./pages/EditorStudies";
 import PL90 from "./pages/PL90";
 import QED from "./pages/QED";
 import POAPoster from "./pages/POAPoster";
@@ -20,8 +20,6 @@ import Bort from "./pages/Bort";
 import Heathbot from "./pages/Heathbot";
 import Gangbot from "./pages/Gangbot";
 
-const Placeholder = () => <div>pending</div>;
-
 const routeData = [
   ["/seers", "The Seers Catalogue", Seers],
   ["/franz-eliza", "Franz & Eliza", FranzEliza],
@@ -29,7 +27,7 @@ const routeData = [
   ["/aya", "Aya", Aya],
   ["/faf-poster", "Food Against Fascism", FafPoster],
   ["/arcade-royale", "Arcade Royale", ArcadeRoyale],
-  ["/editor-studies", "Visual editor studies", Placeholder],
+  ["/editor-studies", "Visual editor studies", EditorStudies],
   ["/pl90", "PL@90 retrospective", PL90],
   ["/qed", "QED", QED],
   ["/poa-poster", "Prince of Arcade poster", POAPoster],
@@ -57,16 +55,12 @@ class App extends Component {
     return (
       <Router>
         <div className="wrapper">
-          <header className="header">six ash portfolio</header>
-          <aside className="sidebar">
-            {/* <span>index of works:</span> */}
-            {links}
-          </aside>
+          <header className="header">six ash: portfolio</header>
+          <aside className="sidebar">{links}</aside>
           <article className="content">
             <Route exact path="/" render={() => null} />
             {routes}
           </article>
-          {/* <footer className="footer">cool footer</footer> */}
         </div>
       </Router>
     );

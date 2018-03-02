@@ -56,13 +56,24 @@ class Bots extends Component {
           often do with Twitter bots.) In 2017 I split it off as a standalone
           Twitter bot.
         </p>
-        <a
-          href="https://twitter.com/its_heathcliff"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View the bot online.
-        </a>
+        <div>
+          <a
+            href="https://twitter.com/its_heathcliff"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the bot online.
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://github.com/lostfictions/heathbot"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the source code.
+          </a>
+        </div>
       </div>
     );
   }
